@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Ali-sBlog/static/css/main.49cc87aa.chunk.css",
+    "main.js": "/Ali-sBlog/static/js/main.7de5988d.chunk.js",
+    "main.js.map": "/Ali-sBlog/static/js/main.7de5988d.chunk.js.map",
+    "runtime-main.js": "/Ali-sBlog/static/js/runtime-main.2ddc0a9b.js",
+    "runtime-main.js.map": "/Ali-sBlog/static/js/runtime-main.2ddc0a9b.js.map",
+    "static/js/2.0020b7bf.chunk.js": "/Ali-sBlog/static/js/2.0020b7bf.chunk.js",
+    "static/js/2.0020b7bf.chunk.js.map": "/Ali-sBlog/static/js/2.0020b7bf.chunk.js.map",
+    "index.html": "/Ali-sBlog/index.html",
+    "static/css/main.49cc87aa.chunk.css.map": "/Ali-sBlog/static/css/main.49cc87aa.chunk.css.map",
+    "static/js/2.0020b7bf.chunk.js.LICENSE.txt": "/Ali-sBlog/static/js/2.0020b7bf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ddc0a9b.js",
+    "static/js/2.0020b7bf.chunk.js",
+    "static/css/main.49cc87aa.chunk.css",
+    "static/js/main.7de5988d.chunk.js"
+  ]
+}
