@@ -1,0 +1,171 @@
+body {
+    background-color: #000000;
+    padding: 20px;
+    margin: 0;
+  }
+  h1::selection, h2::selection, p::selection, ul::selection, li::selection {
+    color: rgb(0, 0, 0);
+    background: snow;
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+  }
+  ul.header {
+    background-color: rgb(41, 41, 41);
+    padding: 0;
+  }
+  ul.header li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .content {
+    background-color: rgb(41, 41, 41);
+    padding: 20px;
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+  }
+  h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+  }
+  
+  h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: "Lucida Console";
+  }
+  p{
+    color: rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  li{
+    color: rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+    
+
+
+  }
+  h3{
+
+    color:rgb(255, 255, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: "Lucida Console";
+  }
+
+  .container {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    padding-top: 175px;
+    
+    height: 100vh;
+    position: relative;
+  }
+  .cube {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    animation: rotater 10s linear infinite;
+  }
+  @keyframes rotater{
+    from {transform: rotateX(0deg) rotateY(0deg)}
+    to {transform: rotateX(360deg) rotateY(360deg)}
+  }
+  .cube img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 1;
+    border: 5px solid rgba(255,255,255, .8);
+    position: absolute;
+    opacity: .95;
+  }
+  .cube img:nth-child(1){
+    transform: rotateY(0deg) translateZ(140px);
+  }
+  .cube img:nth-child(2){
+    transform: rotateY(90deg) translateZ(140px);
+  }
+  .cube img:nth-child(3){
+    transform: rotateY(180deg) translateZ(140px);
+  }
+  .cube img:nth-child(4){
+    transform: rotateY(-90deg) translateZ(140px);
+  }
+  .cube img:nth-child(5){
+    transform: rotateX(90deg) translateZ(140px);
+  }
+  .cube img:nth-child(6){
+    transform: rotateX(-90deg) translateZ(140px);
+  }
+
+
+  .read-more-state {
+    display: none;
+    
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    
+    display: block;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 0.9;
+    font-size: 12px;
+    max-height: 999em;
+    padding: 5px;
+    
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: "Show more";
+    color: white;
+ 
+
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    padding: 0.7em;
+    color: #666;
+    font-size: .9em;
+    line-height: 0.1em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.5em;
+    display: block 10px;
+    float: right;
+
+
+  }
+
+
+  
+ 
+
